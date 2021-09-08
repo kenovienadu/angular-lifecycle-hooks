@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   template: `
-    <div class="wrapper mx-auto w-2/3 pt-10">
+    <div class="wrapper mx-auto w-11/12 md:w-2/3 pt-10">
       <section class="space-y-4 slide" *ngIf="currentPage === 1">
         <p class="font-semibold text-2xl">What is Angular</p>
         <p>
@@ -65,7 +65,11 @@ import { Component } from '@angular/core';
           class is instantiated using the "new" keyword.
         </p>
 
-        <img class="rounded-md" src="assets/images/constructor-1.png" alt="" />
+        <img
+          class="rounded-md w-full"
+          src="assets/images/constructor-1.png"
+          alt=""
+        />
 
         <p class="pt-4">
           Angular relies a lot on dependency injection and the constructor is
@@ -73,7 +77,21 @@ import { Component } from '@angular/core';
           single instance of the class across the application.
         </p>
 
-        <img class="rounded-md" src="assets/images/constructor-2.png" alt="" />
+        <img
+          class="rounded-md w-full"
+          src="assets/images/constructor-2.png"
+          alt=""
+        />
+      </section>
+
+      <section class="space-y-4 slide" *ngIf="currentPage === 6">
+        <p class="font-semibold text-2xl">Hooks Order</p>
+
+        <img
+          class="rounded-md w-full md:w-3/5 mx-auto"
+          src="assets/images/hooks-order.png"
+          alt=""
+        />
       </section>
 
       <!-- SLIDES END HERE -->
@@ -103,14 +121,19 @@ import { Component } from '@angular/core';
     <style>
       .slide {
         min-height: 400px;
-        max-height: 600px;
         overflow-y: scroll;
+      }
+
+      @media screen and (min-width: 600px) {
+        .slide {
+          max-height: 600px;
+        }
       }
     </style>
   `,
 })
 export class IntroductionView {
-  numberOfPages = 5;
+  numberOfPages = 6;
   currentPage = 1;
 
   constructor() {

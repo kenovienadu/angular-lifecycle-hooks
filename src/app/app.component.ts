@@ -4,10 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <main
-      class="h-screen flex bg-gray-900 justify-center pt-56"
+      class="h-screen flex bg-gray-900 justify-center pt-20 md:pt-56"
       *ngIf="showWelcomeScreen"
     >
-      <div class="w-1/2 text-gray-50">
+      <div class="w-4/5 md:w-1/2 text-gray-50">
         <h3 class="text-2xl font-semibold mb-4">
           Getting started: Angular LifeCycle Hooks
         </h3>
@@ -36,12 +36,12 @@ import { Component } from '@angular/core';
       </div>
     </main>
 
-    <main class="h-screen flex bg-gray-900" *ngIf="!showWelcomeScreen">
+    <main class="h-screen md:flex bg-gray-900" *ngIf="!showWelcomeScreen">
       <navbar class="w-56 h-screen"></navbar>
 
       <section class="flex-auto bg-gray-50 p-4">
         <header
-          class="flex pb-3 justify-between header border border-r-0 border-l-0 border-t-0 border-b-1"
+          class="md:flex pb-3 justify-between header border border-r-0 border-l-0 border-t-0 border-b-1"
         >
           <div class="font-semibold text-2xl">Angular LifeCycle Hooks</div>
           <a href="https://kenovienadu.me" target="_blank" class="opacity-50"
@@ -54,6 +54,12 @@ import { Component } from '@angular/core';
         <router-outlet></router-outlet>
       </section>
     </main>
+
+    <style>
+      section {
+        min-height: 50vh;
+      }
+    </style>
   `,
 })
 export class AppComponent {
