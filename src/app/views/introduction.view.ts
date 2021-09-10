@@ -120,13 +120,13 @@ import { Component } from '@angular/core';
 
     <style>
       .slide {
-        min-height: 400px;
+        height: 400px;
         overflow-y: scroll;
       }
 
       @media screen and (min-width: 600px) {
         .slide {
-          max-height: 600px;
+          height: 600px;
         }
       }
     </style>

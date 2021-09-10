@@ -2,3 +2,6 @@
 
 /* Import Tailwind */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.11/tailwind.min.css');
+
+/* Import Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');

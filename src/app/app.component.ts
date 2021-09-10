@@ -17,7 +17,10 @@ import { Component } from '@angular/core';
             src="https://res.cloudinary.com/dk07kf3yl/image/upload/v1630491900/ken-ovienadu-portfolio/IMG_0524_hdj6jh.jpg"
             alt="image of ken ovienadu"
           />
-          <span>Ken Ovienadu</span>
+
+          <div>
+            <span>Ken Ovienadu</span>
+          </div>
         </div>
 
         <p class="opacity-50 mt-4">
@@ -37,17 +40,34 @@ import { Component } from '@angular/core';
     </main>
 
     <main class="h-screen md:flex bg-gray-900" *ngIf="!showWelcomeScreen">
-      <navbar class="w-56 h-screen"></navbar>
+      <navbar class="w-56 flex-none h-screen"></navbar>
 
       <section class="flex-auto bg-gray-50 p-4">
         <header
           class="md:flex pb-3 justify-between header border border-r-0 border-l-0 border-t-0 border-b-1"
         >
           <div class="font-semibold text-2xl">Angular LifeCycle Hooks</div>
-          <a href="https://kenovienadu.me" target="_blank" class="opacity-50"
-            >Ken Ovienadu</a
-          >
+
+          <div class="space-x-4">
+            <a href="https://kenovienadu.me" target="_blank" class="opacity-50"
+              >Ken Ovienadu</a
+            >
+            <!-- <a href="https://github.com/kenovienadu/angular-lifecycle-hooks">
+              <i class="fab fa-github"></i>
+            </a> -->
+          </div>
         </header>
+
+        <div class="text-right">
+          <a
+            class="opacity-50 text-xs"
+            href="https://github.com/kenovienadu/angular-lifecycle-hooks"
+            target="_blank"
+          >
+            View On Github
+            <i class="fab fa-github ml-1"></i>
+          </a>
+        </div>
 
         <br />
 

@@ -5,17 +5,18 @@ import { Component } from '@angular/core';
   template: `
     <nav class="flex flex-col space-y-4">
       <a routerLink="/">Introduction</a>
-      <a routerLink="/ngonchanges">ngOnChanges</a>
-      <a routerLink="/ngoninit">ngOnInit</a>
-      <a>ngOnDestroy</a>
+      <a routerLink="/demo-one">Demo One</a>
+      <a routerLink="/demo-two">Demo Two</a>
+      <a routerLink="/demo-three">Demo Three</a>
+      <a routerLink="/demo-four">Demo Four</a>
     </nav>
 
-    <nav class="flex flex-col space-y-4">
+    <!-- <nav class="flex flex-col space-y-4">
       <a class="mx-2">ngAfterContentInit</a>
       <a class="mx-2">ngAfterContentChecked</a>
       <a class="mx-2">ngAfterViewInit</a>
       <a class="mx-2">ngAfterViewChecked</a>
-    </nav>
+    </nav> -->
 
     <style>
       nav {
